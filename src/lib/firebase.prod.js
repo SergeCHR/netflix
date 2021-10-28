@@ -1,6 +1,5 @@
 const { initializeApp } = require("firebase/app")
-const { getFirestore, collection, addDoc } = require("firebase/firestore")
-const {getAuth} = require("firebase/auth")
+
 
 const config = {
   apiKey: "AIzaSyCxslvmOFZWSPoqSaRsvJHyuflQUgwtsD0",
@@ -12,7 +11,6 @@ const config = {
 }
 
 const firebase = initializeApp(config);
-const db = getFirestore();
 
 //Uncomment this if want to write document into database
 // series.forEach(( async (el) => {

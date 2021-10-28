@@ -5,8 +5,9 @@ import {Signin} from './pages/signin'
 import {Signup} from './pages/signup'
 import { ProtectedRoute, IsUserRedirect } from './helpers/routes';
 import * as ROUTES from './constants/routes'
+import { useAuthListener } from './hooks/use-auth-listener';
 function App() {
-  const user = null;
+  const {user} = useAuthListener();
   return (
     <Router>
       <Switch>
