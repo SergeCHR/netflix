@@ -140,8 +140,12 @@ export const Feature = styled.div`
   background-position-x: right;
   background-repeat: no-repeat;
   background-color: black;
-
+    margin-right: 56px;
   @media (max-width: 1000px) {
+    img {
+        display: none;
+    }
+    margin: 0;
     height: auto;
     background-size: auto;
 
@@ -179,7 +183,6 @@ export const Content = styled.div`
   margin: 56px;
   max-width: 500px;
   line-height: normal;
-
   @media (max-width: 1000px) {
     margin: 30px;
     max-width: none;

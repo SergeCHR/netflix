@@ -38,7 +38,7 @@ Card.Entities = ({children, ...restProps}) => {
 Card.Item =  function CardItem ({item, children, ...restProps}){
     const {setItemFeature, setShowFeature} = useContext(FeatureContext)
     return <Item onClick={()=>{
-        setShowFeature((prevState)=>!prevState)
+        setShowFeature(true)
         setItemFeature(item)
     }} {...restProps}>{children}</Item>
 }
