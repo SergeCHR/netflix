@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro';
-import { Link as ReachRouterLink } from 'react-router-dom';
+import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const Background = styled.div`
   display: flex;
@@ -11,7 +11,6 @@ export const Background = styled.div`
     ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
   }
 `;
-
 export const Container = styled.div`
   display: flex;
   margin: 0 56px;
@@ -99,7 +98,7 @@ export const SearchIcon = styled.button`
   }
 `;
 
-export const ButtonLink = styled(ReachRouterLink)`
+export const ButtonLink = styled(ReactRouterLink)`
   display: block;
   background-color: #e50914;
   width: 84px;

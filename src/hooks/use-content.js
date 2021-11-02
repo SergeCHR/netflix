@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
+import { getFirestore, collection, query, getDocs } from "firebase/firestore";
 export const useContent = (target) => {
     const [content, setContent] = useState([])
     const db = getFirestore();
     useEffect(()=>{
-        const q = query(collection(db, "series"));
+        const q = query(collection(db, target));
         getDocs(q).then((querySnapshot) => {
             const allContent = []
             querySnapshot.forEach((doc) => (
@@ -17,6 +17,6 @@ export const useContent = (target) => {
         });
         
     
-    },[])
+    },[db])
     return {[target] : content}
 }

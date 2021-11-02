@@ -11,7 +11,7 @@ export const Signin = () => {
     const [emailAddress, setEmailAddress] = useState('');
     const [password, setPassword] = useState('')
     const [error, setError] = useState(null)
-    const isInvalid = emailAddress == '' || password == '';
+    const isInvalid = emailAddress === '' || password === '';
     const auth = getAuth();
 
     const handleSignIn = (event) => {
