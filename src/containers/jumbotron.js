@@ -6,7 +6,7 @@ export const JumbotronContainer = () => {
     <div className="App">
       <Jumbotron.Container>
         {jumboData.map((item)=> <Jumbotron key={item.id} direction = {item.direction} >
-          <Jumbotron.Pane>ksjd;fnkajsdjkasdf
+          <Jumbotron.Pane>ksjd;
             <Jumbotron.Title>{item.title}</Jumbotron.Title>
             <Jumbotron.Subtitle>{item.subTitle}</Jumbotron.Subtitle>
           </Jumbotron.Pane>
